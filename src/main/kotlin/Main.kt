@@ -4,6 +4,7 @@ fun main() {
     StringValues()
     ifElse()
     breakContinue()
+    allArrays()
 }
 
 // Methods & Variables
@@ -141,4 +142,30 @@ fun breakContinue(){
     }
 }
 
+fun allArrays(){
+    val cars = arrayOf("BMW","Porsche","Mclaren","VW","Mercedes","AC Cobra","Toyota")
+
+    // change value in the array
+    cars[3]= "Volkswagen"
+
+    // Array size or length
+    val arraySizeLength = cars.size
+
+    // check if element exist in an array
+
+    val searchCars = "BMW" in cars // or if("BMW" in cars)
+    println(searchCars)
+
+    // displaying all the cars
+    for(vehicle in cars)
+        println(vehicle)
+
+    // RANGE loop through alphabets
+    for(chars in 'a'..'z' ){
+        print(chars.uppercaseChar())
+    }
+     // RANGE loop through numbers
+    println()
+    for(numbers in 1..7) print(numbers)
+}
 
